@@ -54,15 +54,29 @@
             text-decoration: underline;
         }
 
-        /* Content Section */
+        /* Main Content Section */
         .content {
-            margin: 40px auto;
-            width: 60%;
-            text-align: left;
-            font-size: 20px;
-            background: rgba(0, 0, 0, 0.6);
-            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            margin: 40px 10%;
+        }
+
+        .content .left {
+            width: 45%; /* Left column for paragraphs */
+        }
+
+        .content .right {
+            width: 45%; /* Right column for images */
+        }
+
+        .content .right img {
+            width: 100%; /* Ensure the image fits the container */
             border-radius: 10px;
+        }
+
+        .content p {
+            font-size: 20px;
+            line-height: 1.6;
         }
     </style>
 </head>
