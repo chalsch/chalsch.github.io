@@ -14,7 +14,7 @@
         body {
             font-family: Arial, sans-serif;
             background: url('images/background.jpg') no-repeat 50 10/cover;
-            color: white;
+            color: black;
         }
 
         /* Banner Styling */
@@ -32,10 +32,15 @@
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
         }
 
+        .banner h1 {
+            position: relative; /* Makes it positionable */
+            top: -10px; /* Moves the text up by 10px */
+        }
+
         /* Navbar Styling */
         .navbar {
             position: absolute;
-            top: 260px; /* Aligns navbar to the top of the banner */
+            top: 250px; /* Aligns navbar to the top of the banner */
             width: 100%;
             background: rgba(0, 0, 0, 0.7);
             padding: 15px 0;
@@ -83,7 +88,7 @@
 <body>
 
     <div class="banner">
-        About Me
+        <h1>About Me</h1> <!-- "About Me" text -->
     </div>
 
     <div class="navbar">
@@ -96,14 +101,14 @@
 
     <div class="content">
         <div class="left">
-            <h2>Welcome to My About Page</h2>
-            <p>Hello! I'm [Your Name], a passionate [Your Profession or Interest]. I love working on creative projects and sharing my knowledge with others. Here's a bit about me:</p>
-            <p>I have a background in [Your Field], and I've worked on projects like [Project 1], [Project 2], and [Project 3]. I aim to make meaningful contributions in the [Industry] and continuously improve my skills.</p>
-            <p>Feel free to explore my website to learn more about my work and personal interests!</p>
+            <p>I am a postdoctoral scholar in Eliza Grames’ lab at Binghamton University. My work focuses on the multifaceted nature of the Anthropocene and its impact on butterfly populations. In other words: I chase and count butterflies in the mountains.</p>
+            <p>I received my Ph.D in 2023 from the University of Nevada Reno, where I worked with Matthew Forister. Before UNR, I worked in science education. This took me to Crystal Cove State Park in Southern California and the Carrizo Plain National Monument in the California Central Valley. At Crystal Cove, I worked for Crystal Cove Conservancy, the non-profit organization. While there I developed education programs that engaged K-12 students in community science research. These programs engaged students in active research in restoration ecology and butterfly monitoring. At the Carrizo Plain, I worked in interpretation for the Bureau of Land Management.</p>
+            <p>When not spending time in the mountains to look for butterflies, I spend time in the mountains to be in the mountains! Summiting a peak, making it to a pass, or cruising through a giant valley are all captivating experiences and I am always looking to get away to do more. I especially love ranges off the beaten path, which is most of them in Nevada. I am also a bit of a fantasy nerd, D&D obsessive, and a coffee snob.</p>
         </div>
 
         <div class="right">
             <img src="images/20180730-76.jpg" alt="A photo of me">
+            <img src="images/20160509-26991_434301638135_1362500_n-2.jpg" alt="A photo of me">
         </div>
     </div>
 
