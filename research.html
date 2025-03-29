@@ -89,30 +89,26 @@
             text-decoration: underline;
         }
 
-        /* Main Content Section */
         .content {
-            display: flex;
-            justify-content: space-between;
-            margin: 40px 10%;
-        }
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto auto auto; /* Three rows */
+    gap: 20px; /* Space between grid items */
+    max-width: 900px; /* Adjust width */
+    margin: 40px auto; /* Center content */
+    align-items: center; /* Align content vertically */
+}
 
-        .content .left {
-            width: 45%; /* Left column for paragraphs */
-        }
+.text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
 
-        .content .right {
-            width: 45%; /* Right column for images */
-        }
-
-        .content .right img {
-            width: 100%; /* Ensure the image fits the container */
-            border-radius: 10px;
-        }
-
-        .content p {
-            font-size: 20px;
-            line-height: 1.6;
-        }
+.image img {
+    width: 100%; /* Ensure image fits container */
+    border-radius: 10px;
+}
     </style>
 </head>
 <body>
