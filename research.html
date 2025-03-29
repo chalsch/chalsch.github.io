@@ -90,14 +90,14 @@
         }
 
         .content {
-            display: grid;
-            grid-template-columns: 1fr 1fr; /* Two equal columns */
-            grid-template-rows: auto auto auto; /* Three rows */
-            gap: 20px; /* Space between grid items */
-            max-width: 900px; /* Adjust width */
-            margin: 40px 10%;
-            align-items: start; /* Aligns items to the top */
-        }
+    display: grid;
+    grid-template-columns: 1fr 50px 1fr; /* Two content columns with a fixed gap */
+    grid-template-rows: auto auto auto; /* Three rows */
+    max-width: 1200px; /* Adjust width */
+    margin: 40px auto; /* Center content */
+    align-items: start; /* Align text to the top */
+    padding: 0 40px; /* Padding on the sides */
+}
         
         .text {
             font-size: 18px;
