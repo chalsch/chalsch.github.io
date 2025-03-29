@@ -65,22 +65,42 @@
 
 .info-box {
     background: rgba(0, 0, 0, 0.7); /* Dark with transparency */
-    color: white; /* White text for contrast */
+    color: white; /* White text */
     padding: 20px;
     border-radius: 15px; /* Rounded corners */
-    max-width: 600px; /* Adjust width */
+    max-width: 500px; /* Wider box */
     text-align: left;
     position: absolute;
-    left: 50px; /* Keeps it on the left */
-    top: 10%; /* Moves it higher on the page */
+    left: 50px; /* Position on the left */
+    top: 10%; /* Moves it up */
 }
 
-.info-box img {
-    width: 20%; /* Make image fit inside the box */
-    border-radius: 10px; /* Round image corners slightly */
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px; /* Space between text and image */
+.info-header {
+    background: rgba(255, 255, 255, 0.2); /* Light semi-transparent background */
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%; /* Full width */
+    border-radius: 10px 10px 0 0; /* Round top corners only */
+}
+
+    .info-content {
+    display: flex;
+    gap: 15px; /* Space between text and image */
+    align-items: center;
+    padding-top: 10px;
+}
+
+.info-content p {
+    flex: 1; /* Text takes up left space */
+    margin: 0;
+}
+
+.info-content img {
+    flex: 1; /* Image takes up right space */
+    max-width: 100px; /* Adjust as needed */
+    border-radius: 10px;
 }
         
     </style>
@@ -97,10 +117,12 @@
 
     <div class="content">
     <div class="info-box">
-        <h1>Chris Halsch</h1>
-        <h2>Understaning insect decline in the Anthropocene</h2>
-        <p>I am a global change ecologist who uses approaches from genomics to population monitoring and synthesis to help protect the little things that run the world.</p>
-         tc<img src="images/20180711-ChrisWithButterfly-3 copy.jpg" alt="Example Image">
+        <h1 class="info-header">Chris Halsch</h1>
+        <h2 class="info-header">Understaning insect decline in the Anthropocene</h2>
+        <div class="info-content">
+            <p>I am a global change ecologist who uses approaches from genomics to population monitoring and synthesis to help protect the little things that run the world.</p>
+         <img src="images/20180711-ChrisWithButterfly-3 copy.jpg" alt="Example Image">
+        </div>
     </div>
 </div>
 
