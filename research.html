@@ -91,12 +91,13 @@
 
         .content {
     display: grid;
-    grid-template-columns: 1fr 50px 1fr; /* Two content columns with a fixed gap */
+    grid-template-columns: 1fr 1fr; /* Exactly two columns */
     grid-template-rows: auto auto auto; /* Three rows */
-    max-width: 1200px; /* Adjust width */
-    margin: 40px auto; /* Center content */
-    align-items: start; /* Align text to the top */
-    padding: 0 40px; /* Padding on the sides */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    align-items: start;
+    padding: 0 40px;
 }
         
         .text {
