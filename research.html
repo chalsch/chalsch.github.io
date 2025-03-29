@@ -90,14 +90,19 @@
         }
 
         .content {
-            display: grid;
-            grid-template-columns: 1fr 1fr; /* Exactly two columns */
-            grid-template-rows: auto auto auto; /* Three rows */
             gap: 20px;
             max-width: 1200px;
             margin: 40px auto;
             align-items: start;
             padding: 0 40px;
+        }
+
+        .content .left {
+            width: 45%; /* Left column for paragraphs */
+        }
+
+        .content .right {
+            width: 45%;
         }
         
         .text {
