@@ -90,20 +90,22 @@
         }
 
         .content {
-            display: grid;
-            grid-template-columns: 1fr 1fr; /* Two equal columns */
-            grid-template-rows: auto auto auto; /* Three rows */
-            gap: 20px; /* Space between grid items */
-            max-width: 900px; /* Adjust width */
-            margin: 40px auto; /* Center content */
-            align-items: top; /* Align content vertically */
-        }
-        
-        .text {
-            font-size: 18px;
-            line-height: 1.6;
-            color: #333;
-        }
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto auto auto; /* Three rows */
+    gap: 20px; /* Space between grid items */
+    max-width: 900px; /* Adjust width */
+    margin: 40px auto; /* Center content */
+    align-items: start; /* Aligns items to the top */
+}
+
+.text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    display: flex;
+    align-items: flex-start; /* Aligns text to the top */
+}
         
         .image img {
             width: 100%; /* Ensure image fits container */
