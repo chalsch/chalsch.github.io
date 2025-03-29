@@ -50,23 +50,36 @@
             text-decoration: underline;
         }
 
-        .content {
-            margin-top: 75px;
-            margin-left: 150px;
-        }
+      /*  .content {*/
+       /*     margin-top: 75px;*/
+       /*     margin-left: 150px;*/
+       /* } */
 
-        .content p {
-            font-size: 20px;
-            line-height: 1.6;
-        }
+     .content {
+    position: relative;
+    height: 100vh; /* Full page height */
+    display: flex;
+    align-items: center; /* Centers vertically */
+    padding-left: 50px; /* Adjust distance from left */
+}
 
-        .content .left {
-            width: 30%; /* Left column for paragraphs */
-        }
+.info-box {
+    background: rgba(0, 0, 0, 0.7); /* Dark with transparency */
+    color: white; /* White text for contrast */
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners */
+    max-width: 300px; /* Adjust width */
+    text-align: center;
+    position: absolute;
+    left: 50px; /* Position on the left */
+    top: 20%; /* Adjust vertical position */
+}
 
-        .content .right {
-            width: 60%;
-        }
+.info-box img {
+    width: 20%; /* Make image fit inside the box */
+    border-radius: 10px; /* Round image corners slightly */
+    margin-top: 10px; /* Space between text and image */
+}
         
     </style>
 </head>
@@ -85,7 +98,7 @@
         <h1>Chris Halsch</h1>
         <h2>Understaning insect decline in the Anthropocene</h2>
         <p>I am a global change ecologist who uses approaches from genomics to population monitoring and synthesis to help protect the little things that run the world.</p>
-        <img src="images/20180711-ChrisWithButterfly-3 copy.jpg" alt="Example Image">
+         tc<img src="images/20180711-ChrisWithButterfly-3 copy.jpg" alt="Example Image">
     </div>
 </div>
 
