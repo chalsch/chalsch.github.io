@@ -102,9 +102,10 @@
 }
 
 /* Ensure text is on top of overlay */
-.info-box p {
+.info-box h1, .info-box h2, .info-box p {
     position: relative;
     z-index: 2;
+    color: white; /* Ensures headers stay white */
 }
 
 .info-header {
@@ -124,11 +125,6 @@
     padding-top: 10px;
     color: white;
     z-index: 4;
-}
-
-.info-content p {
-   /* flex: 1; /* Text takes up left space */
-    margin: 0;
 }
 
 .info-content img {
