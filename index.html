@@ -100,12 +100,17 @@
         }
         
         /* Ensure text is on top of overlay */
-        .info-box h1, .info-box h2, .info-box h3, .info-box p {
+        .info-box h1, .info-box h2, .info-box h3, {
             position: relative;
             z-index: 2;
+            color: white; 
+        }
+            .info-box p {
             font-size: 18px;
-            line-width: 1.6
+            line-height: 1.6
             color: white; /* Ensures headers stay white */
+                            z-index: 2;
+
         }
         
        /* .info-header {
