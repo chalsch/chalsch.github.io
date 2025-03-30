@@ -68,8 +68,10 @@
      position: relative;
     left: 50px; /* Position on the left */
     top: 10px; /* Moves it up */
-    height: auto; /* Box height follows image */
-    width: 40%; /* Box height follows image */
+    
+    width: 50%; /* Reduce width while maintaining aspect ratio */
+    max-width: 400px; /* Ensures it doesn’t get too big */
+    aspect-ratio: 9 / 16; /* Keeps proportions of background image */
 
     
     background: url('images/20180711-ChrisWithButterfly-3 copy.jpg') no-repeat;
