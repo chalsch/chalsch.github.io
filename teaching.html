@@ -6,39 +6,25 @@
     <link rel="icon" href="images/silo.png">
     <title>Teaching</title>
     <style>
+        /* Global Reset */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
+        /* General Styling */
         body {
             font-family: Arial, sans-serif;
-            background: url('images/background.jpg') no-repeat 50 10/cover;
+            background: url('images/background.jpg') no-repeat center/cover;
             color: black;
         }
 
-        /* Banner Styling */
+        /* Banner Section */
         .banner {
             width: 100%;
-            height: 300px; /* Adjust as needed */
-            background: url('images/20190113-DSC_0919.jpg') no-repeat;
-            background-size: cover;
-            background-position: 50% 35%; /* 50% from left, 30% from top */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 32px;
-            font-weight: bold;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-        }
-
-        .footer {
-            width: 100%;
-            height: 200px; /* Adjust height as needed */
-            background: url('images/20180826-DSC_0745.jpg') no-repeat;
-            background-size: cover; /* Prevents excessive zoom */
-            background-position: 75% 42%; /* 50% from left, 30% from top */
+            height: 300px;
+            background: url('images/20190113-DSC_0919.jpg') no-repeat center/cover;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -49,19 +35,16 @@
 
         .banner h1 {
             color: white;
-            position: relative; /* Makes it positionable */
-            top: -10px; /* Moves the text up by 10px */
         }
 
-        /* Navbar Styling */
+        /* Navigation Bar */
         .navbar {
             position: absolute;
-            top: 249px; /* Aligns navbar to the top of the banner */
+            top: 249px;
             width: 100%;
             background: rgba(0, 0, 0, 0.7);
             padding: 15px 0;
             text-align: center;
-            padding-left: 0%;
         }
 
         .navbar a {
@@ -76,22 +59,25 @@
         }
 
         /* Main Content Section */
-        .content {
-            display: flex;
-            justify-content: space-between;
+        .content-container {
             margin: 40px 10%;
         }
 
+        .content {
+            display: flex;
+            justify-content: space-between;
+        }
+
         .content .left {
-            width: 65%; /* Left column for paragraphs */
+            width: 65%;
         }
 
         .content .right {
-            width: 25%; /* Right column for images */
+            width: 25%;
         }
 
         .content .right img {
-            width: 100%; /* Ensure the image fits the container */
+            width: 100%;
             border-radius: 10px;
         }
 
@@ -100,35 +86,46 @@
             line-height: 1.6;
         }
 
-        .content1 {
-                        margin: 40px 10%;
-            font-size: 20px;
-        }
-        
+        /* Styling Links */
         a:link {
-  color: 	#00BFFF;
-  background-color: transparent;
-  text-decoration: none;
-}
+            color: #00BFFF;
+            text-decoration: none;
+        }
 
-        .content a:hover {
+        a:hover {
             text-decoration: underline;
         }
 
+        a:visited {
+            color: #00BFFF; /* Ensure visited links stay blue */
+        }
+
+        /* Footer */
+        .footer {
+            width: 100%;
+            height: 200px;
+            background: url('images/20180826-DSC_0745.jpg') no-repeat center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Section Separator */
         hr {
-  margin: 2em auto; /* centred margin */
-  height: 2px; /* thickness of the line */
+            margin: 2em auto;
             width: 125px;
-  background-color: black; /* colour of the line */
-  border: none; /* no border */
-}
-        
+            height: 2px;
+            background-color: black;
+            border: none;
+        }
     </style>
 </head>
 <body>
-
     <div class="banner">
-        <h1>Teaching</h1> <!-- "About Me" text -->
+        <h1>Teaching</h1>
     </div>
 
     <div class="navbar">
@@ -140,94 +137,37 @@
         <a href="contact.html">Code & Contact</a>
     </div>
 
-    <div class="content1">
-        <p><i>Any graduate student starting in an ecology and evolution program will have to wrangle with statistics. It might not be the primary motivation for conducting the work, but it is an important step. This was how I felt when I started graduate school, but I ended up finding quantitative tasks quite fun. Over the years, I have put together a few lessons aimed at a graduate student audience to provide reproducible examples and code. When it comes to statistics, the best way to learn is by doing, and these lessons are meant to make the initial step easier.</i></p>
+    <div class="content-container">
+        <p><i>Graduate students in ecology and evolution often need statistics. Here are some lessons to help you get started.</i></p>
+        <hr>
     </div>
 
-    <hr>
-
-   <div class="content">
+    <div class="content">
         <div class="left">
-
-          <h2>Intro to statistics for graduate students</h2>
-            <br>
-            <p>Most of my lessons were part of Lee Dyer's graduate-level statistics course “Research Design,” which I TA’d for two years. During that time (which was during the pandemic), I developed online lessons to provide students with an introduction to the course material, especially for running it in R. These lessons cover a large extent of common statistical approaches and only meant to provide a basic workflow and some examples.</p>
-            <br>
-           <p><i>I developed the first version of these lessons; however, Danielle Salcido, Ari Grele, and Leah Lenzo's work in later years improved them greatly. The linked lessons represent work from all of us.</i></p>
-          <br>
+            <h2>Intro to Statistics</h2>
+            <p>Lessons developed for Lee Dyer's graduate-level course "Research Design," covering common statistical approaches in R.</p>
             <h3>R Basics</h3>
-            <br>
-            <p>An introduction to using R. This lesson introduces some basic workflows, operators, and functions.</p>
-            <br>
-            <p style="text-indent: 20px;">Click here to open the R markdown for this lesson: <a href="lectures/Intro_to_R.html" target="_blank">[html] </a></p>
-            <p style="text-indent: 20px;">Click here to download the data for this lesson: <a href="lectures/intro_r_data.csv" target="_blank">[csv] </a></p>
-          <br>
-            <h3>Intro to linear models</h3>
-            <br>
-            <p>An introduction to linear models. This lesson takes you through assumptions and code for t-tests, ANOVA, and simple regression.</p>
-            <br>
-            <p style="text-indent: 20px;">Click here to open the R markdown for this lesson: <a href="lectures/Intro_to_LMs.html" target="_blank">[html] </a></p>
-            <p style="text-indent: 20px;">Click here to download the data for this lesson: <a href="lectures/intro_LM_data.csv" target="_blank">[csv] </a></p>
-          <br>
-            <h3>Exploring interactions</h3>
-            <br>
-            <p>This lesson considers what a statistical interaction actually is and how to interpret them.</p>
-            <br>
-            <p style="text-indent: 20px;">Click here to open the R markdown for this lesson: <a href="lectures/Linear_Models_Exploring_Interactions.html" target="_blank">[html] </a></p>
-            <br>
-            <h3>More complex models</h3>
-            <br>
-            <p>The next step up in modeleling. This lesson takes you through generalized linear models, mixed models, and simple Bayesian code.</p>
-            <br>
-            <p style="text-indent: 20px;">Click here to open the R markdown for this lesson: <a href="lectures/complex_models.html" target="_blank">[html] </a></p>
-            <p style="text-indent: 20px;">Click here to download the data for this lesson: <a href="lectures/Complex_models_data.csv" target="_blank">[csv] </a></p>
-          <br>
-            <h3>Multivariate void</h3>
-            <br>
-            <p>This lesson provides examples and code for analyzing multivariate datasets.</p>
-            <br>
-            <p style="text-indent: 20px;">Click here to open the R markdown for this lesson: <a href="lectures/multivariate_techniques.html" target="_blank">[html] </a></p>
-            <p style="text-indent: 20px;">Click here to download the data for this lesson: <a href="lectures/ordination.csv" target="_blank">[csv] </a> <a href="lectures/community_data.csv" target="_blank">[csv] </a> </p>
-          <br>
-            <h3>Structural equation modeling and more</h3>
-            <br>
-            <p>This lesson first explores path analysis, providing examples and code. It then examines the idea that there are multiple paths to the same answer. The "wrong" model often provides similar inferenaces as the "right" one if the signal is strong enough.</p>
-            <br>
-            <p style="text-indent: 20px;">Click here to open the R markdown for this lesson: <a href="lectures/SEM.html" target="_blank">[html] </a></p>
-            <p style="text-indent: 20px;">Click here to download the data for this lesson: <a href="lectures/multiple_paths.csv" target="_blank">[csv] </a></p>
-          <br>
-          <h2>Miscellaneous lessons</h2>
-            <br>
-            <p>In addition to the main course above, I also have put together some random one off lessons over the years. Enjoy!</p>
-          <br>
-          <h3>Basic Simulation</h3>
-          <br>
-          <p>An introduction to basic data simulation using R. It takes you through distributions and simulating data with different error distributions for different models.</p>
-          <br>
-          <p style="text-indent: 20px;">Click here to open the R markdown for this lesson: <a href="lectures/simulation_follow_along.html" target="_blank">[html] </a></p>
-          <br>
-            <h3>PCA by hand</h3>
-          <br>
-          <p>A lesson that decomposes PCA into its component parts and unpackages what is going on under the hood.</p>
-            <br>
-            <p style="text-indent: 20px;">Click here to open the R markdown for this lesson: <a href="lectures/PCA.html" target="_blank">[html] </a></p>
-            <p style="text-indent: 20px;">Click here to download the lecture slides for this lesson: <a href="lectures/Ordination.pptx" target="_blank">[pptx] </a></p>
-            <br>
-            <h3>Basic hierarchical model in JAGS</h3>
-          <br>
-          <p>A lesson that provides a basic example (and code) of running a Bayesian hierarchical model using JAGS in R.</p>
-            <br>
-            <p style="text-indent: 20px;">Click here to open the R markdown for this lesson: <a href="lectures/Bayes.html" target="_blank">[html] </a></p>
-
+            <p>Introduction to R's basic workflows and functions.</p>
+            <p><a href="lectures/Intro_to_R.html" target="_blank">[HTML]</a></p>
+            <p><a href="lectures/intro_r_data.csv" target="_blank">[CSV]</a></p>
+            
+            <h3>Intro to Linear Models</h3>
+            <p>Exploring t-tests, ANOVA, and simple regression.</p>
+            <p><a href="lectures/Intro_to_LMs.html" target="_blank">[HTML]</a></p>
+            <p><a href="lectures/intro_LM_data.csv" target="_blank">[CSV]</a></p>
+            
+            <h3>Complex Models</h3>
+            <p>Introduction to generalized linear models and Bayesian approaches.</p>
+            <p><a href="lectures/complex_models.html" target="_blank">[HTML]</a></p>
+            <p><a href="lectures/Complex_models_data.csv" target="_blank">[CSV]</a></p>
         </div>
 
         <div class="right">
-            <img src="images/SEM_plot.png", style="margin-bottom: 300px; margin-top: 220px;", alt="A photo of me">
-            <img src="images/eye.png" alt="A photo of me">
+            <img src="images/SEM_plot.png" alt="Statistical Model Plot">
+            <img src="images/eye.png" alt="Visualization">
         </div>
     </div>
-    <footer class="footer">
-    </footer>
-    </body>
-</html>
 
+    <footer class="footer"></footer>
+</body>
+</html>
