@@ -139,6 +139,26 @@
             max-width: 100px;  
             border-radius: 10px;
         }*/
+
+        @media only screen and (max-width: 768px) {
+  .info-box {
+    position: static; /* Let it flow naturally in the layout */
+    left: auto;
+    top: auto;
+
+    width: 90%;        /* Fill most of the screen */
+    max-width: none;   /* Remove 25% limit */
+    aspect-ratio: auto; /* Let height adjust to content */
+    margin: 20px auto; /* Center with space around */
+
+    padding: 15px;     /* Slightly smaller padding */
+    font-size: 16px;   /* Reduce text size for readability */
+  }
+
+  .info-box p {
+    font-size: 16px; /* Smaller text on mobile */
+  }
+}
     
     </style>
 </head>
