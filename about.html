@@ -62,15 +62,17 @@
             background: rgba(0, 0, 0, 0.7);
             padding: 15px 0;
             text-align: center;
-            z-index: 10; */
-            position: absolute;
-            bottom: 0; /* sticks to bottom of banner */
-            left: 0;
+            z-index: 10; 
+            position: absolute; 
+            bottom: 0;  
+            left: 0; */
             width: 100%;
             background: rgba(0, 0, 0, 0.7);
             padding: 15px 0;
             text-align: center;
             z-index: 10;
+            position: relative; /* not absolute */
+            margin-top: 300px; /* matches .banner height */
         }
 
         .navbar a {
@@ -135,14 +137,15 @@
 
     <div class="banner">
         <h1>About Me</h1> <!-- "About Me" text -->
-        <div class="navbar">
+    </div>
+
+    <div class="navbar">
         <a href="index.html">Home</a>
         <a href="research.html">Research</a>
         <a href="pubs.html">Publications</a>
         <a href="code.html">Projects</a>
         <a href="teaching.html">Teaching</a>
         <a href="about.html">About me</a>
-    </div>
     </div>
 
     <div class="content">
