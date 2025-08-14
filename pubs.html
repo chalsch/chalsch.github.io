@@ -21,6 +21,7 @@
 
         /* Banner Styling */
         .banner {
+            position: relative;
             width: 100%;
             height: 300px; /* Adjust as needed */
             background: url('images/DSC04104.jpg') no-repeat;
@@ -56,13 +57,20 @@
 
         /* Navbar Styling */
         .navbar {
-            position: absolute;
-            top: 249px; /* Aligns navbar to the top of the banner */
-            width: 100%;
-            background: rgba(0, 0, 0, 0.7);
-            padding: 15px 0;
-            text-align: center;
-        }
+    position: absolute;
+    bottom: 0; /* sticks to bottom of banner */
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px 0;
+    text-align: center;
+    z-index: 10;
+
+    /* Font styling independent of banner's h1 */
+    font-size: 18px;
+    font-weight: normal;
+    font-family: Arial, sans-serif;
+}
 
         .navbar a {
             color: white;
@@ -140,15 +148,14 @@
 
     <div class="banner">
         <h1>Publications</h1> <!-- "About Me" text -->
-    </div>
-
-    <div class="navbar">
+         <div class="navbar">
         <a href="index.html">Home</a>
         <a href="research.html">Research</a>
         <a href="pubs.html">Publications</a>
         <a href="code.html">Projects</a>
         <a href="teaching.html">Teaching</a>
         <a href="about.html">About me</a>
+    </div>
     </div>
 
     <div class="content">
